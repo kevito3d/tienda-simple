@@ -7,13 +7,17 @@ const Sale = sequelize.define("sale", {
         primaryKey: true,
     },
 
-
     username: {
         type: Sequelize.STRING,
     },
 
     total: {
         type: Sequelize.DOUBLE,
+    },
+
+    date: {
+        type: Sequelize.DATE,
+        field: 'created_at'
     },
 
 }, { timestamps: false })

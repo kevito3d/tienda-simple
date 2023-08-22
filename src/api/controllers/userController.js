@@ -41,12 +41,12 @@ export const login = async (req, res, next) => {
       });
     } else {
       return res.status(404).json({
-        message: "password dont match",
+        message: "conotraseña incorrecta",
       });
     }
   } else {
     return res.status(404).json({
-      message: "user not found",
+      message: "usuario no existe",
     });
   }
 };
@@ -72,7 +72,7 @@ export const createUser = async (req, res) => {
 
       if (newUser) {
         res.status(201).json({
-          message: "User created successfully",
+          message: "usuario creado correctamente",
           data: {
             username,
           },
