@@ -8,7 +8,7 @@
   db_password= mi_password<br>
   db_host=localhost<br>
   db=mysql<br>
-  JWT_SECRET=<br>
+  JWT_SECRET=<br><br>
 
 #instalar las dependencias con npm i o pnpm i<br>
 <br>
